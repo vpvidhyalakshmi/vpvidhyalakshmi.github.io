@@ -15,7 +15,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "https://vpvidhyalakshmi.github.io/contact.php",
                 type: "POST",
                 data: {
                     name: name,
