@@ -56,6 +56,13 @@
         }
     });
     
+    // Smooth scrolling for specific button
+    $('.btn[href="#experience"]').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#experience').offset().top - 45
+        }, 1500, 'easeInOutExpo');
+    });
     
     // Typed Initiate
     if ($('.hero .hero-text h2').length == 1) {

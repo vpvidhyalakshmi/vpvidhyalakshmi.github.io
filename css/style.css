@@ -148,7 +148,7 @@ a:focus {
 
 .navbar .navbar-brand {
     margin: 0;
-    font-size: 45px;
+    font-size: 35px;
     line-height: 0px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -458,7 +458,12 @@ a:focus {
     margin: 0;
     position: relative;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.section-header h3 {
+    margin-top: 15px;
+    position: relative;
 }
 
 @media (max-width: 767.98px) {
@@ -791,8 +796,35 @@ a:focus {
 .service .tools-icon i {
     position: relative;
     font-size: 60px;
-    color: #ffffff;
-    transition: .3s;
+    text-align: center;
+}
+
+
+.icon-container {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.icon-container i {
+    font-size: 2em;
+    display: block;
+    margin: 10px auto 10px auto;
+    
+}
+
+.icon-container span {
+    display: block;
+    text-align: center; /* Ensure the text is centered */
+    margin-bottom: 20px; /* Add space below the text */
+}
+
+
+.icon-container img {
+    width: 50px; /* Adjust the size of the icon as needed */
+    height: 50px;
+    display: block;
+    margin: 10px auto 10px auto;
 }
 
 .service .service-item:hover .service-text h3,
