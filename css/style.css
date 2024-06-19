@@ -764,11 +764,6 @@ a:focus {
     transition: .3s;
 }
 
-.service .service-icon2 i {
-    position: relative;
-    font-size: 60px;
-    transition: .3s;
-}
 
 .service .service-item:hover i {
     font-size: 75px;
@@ -792,6 +787,27 @@ a:focus {
     font-size: 16px;
     transition: 1s;
 }
+
+.service .tools-icon i {
+    position: relative;
+    font-size: 60px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.service .tools-text {
+    position: relative;
+    width: calc(100% - 120px);
+    padding: 0 30px;
+}
+
+.service .tools-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+}
+
 
 .service .service-item:hover .service-text h3,
 .service .service-item:hover .service-text p {
