@@ -764,6 +764,12 @@ a:focus {
     transition: .3s;
 }
 
+.service .service-icon2 i {
+    position: relative;
+    font-size: 60px;
+    transition: .3s;
+}
+
 .service .service-item:hover i {
     font-size: 75px;
 }
