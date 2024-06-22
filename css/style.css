@@ -1347,7 +1347,7 @@ a:focus {
         font-size: 16px;
     }
 
-    .footer .footer-menu p {
+    .footer .footer-menu p, a {
         font-size: 16px;
         line-height: 16px;
         padding: 0 5px;
