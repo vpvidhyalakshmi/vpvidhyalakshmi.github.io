@@ -450,7 +450,7 @@
                     <!-- CTP-->
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">Apr 2024 - Present</div>
+                            <div class="timeline-date">Mar 2024 - Jul 2024</div>
                             <h2>Data Analyst</h2>
                             <h4>Changing The Present, Florida, NY, USA</h4>
                             <p>
@@ -796,10 +796,30 @@
                     <p>From Blog</p>
                     <h2>Latest Articles</h2>
                 </div>
-                <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <!-- Blog - Streamlit-->
+                    <div class="item">
+                        <div class="blog-item wow fadeInUp" >
+                            <div class="blog-img">
+                                <img src="img/blog-streamlit.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Beginner's Guide: Building a Chatbot Front-End with Python</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Technology</p>
+                                    <p><i class="far fa-calendar-alt"></i>Jul 23, 2024</p>
+                                </div>
+                                <p>
+                                    Dive into the world of interactive web applications with our comprehensive guide on building chatbots using Python and Streamlit. Discover engaging, low-code front-ends that bring your chatbot to life.
+                                </p>
+                                <a class="btn" href="https://vpvidhyalakshmi.blogspot.com/2024/07/beginners-guide-building-chatbot-front.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Blog - GitHub Website-->
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="item">
+                        <div class="blog-item wow fadeInUp" >
                             <div class="blog-img">
                                 <img src="img/blog-github.jpg" alt="Blog">
                             </div>
@@ -811,15 +831,15 @@
                                     <p><i class="far fa-calendar-alt"></i>Jun 20, 2024</p>
                                 </div>
                                 <p>
-                                    Unlock the power of GitHub with our beginner-friendly guide to hosting HTML static sites.Learn how to showcase your projects online effortlessly and effectively, ensuring they reach a global audience with ease.
+                                    Unlock the power of GitHub with our beginner-friendly guide to hosting HTML static sites. Learn how to showcase your projects online effortlessly and effectively, ensuring they reach a global audience with ease.
                                 </p>
                                 <a class="btn" href="https://vpvidhyalakshmi.blogspot.com/2024/06/beginners-guide-hosting-your-html.html">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <!-- Blog - kdrama-->
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="item">
+                        <div class="blog-item wow fadeInUp" >
                             <div class="blog-img">
                                 <img src="img/blog-kdrama.jpg" alt="Blog">
                             </div>
@@ -827,11 +847,11 @@
                                 <h2>Feeling Down? These Korean Dramas Will Lift Your Spirits!</h2>
                                 <div class="blog-meta">
                                     <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>TV Recommendations</p>
+                                    <p><i class="far fa-list-alt"></i>Narratives</p>
                                     <p><i class="far fa-calendar-alt"></i>Jun 18, 2024</p>
                                 </div>
                                 <p>
-                                    Feeling overwhelmed and in need of a boost? Discover Korean dramas with inspiring stories and relatable characters that will lift your spirits and reignite your motivation
+                                    Feeling overwhelmed and in need of a boost? Dive into the world of Korean dramas, where you'll find captivating stories and relatable characters that are sure to uplift your spirits and reignite your motivation.
                                 </p>
                                 <a class="btn" href="https://vpvidhyalakshmi.blogspot.com/2024/06/feeling-down-these-korean-dramas-will.html">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
@@ -898,5 +918,84 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+
+        <!-- carousel block--> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <style>
+            .owl-carousel .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            .owl-carousel .blog-item {
+                width: 100%;
+            }
+            .owl-nav .owl-prev, .owl-nav .owl-next {
+                background: #333;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 18px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+                background: #555;
+            }
+            .owl-nav {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+            .owl-nav .owl-prev {
+                position: absolute;
+                left: -20px;
+            }
+            .owl-nav .owl-next {
+                position: absolute;
+                right: -20px;
+            }
+        </style>
+        
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    items: 1, // Number of items to display
+                    loop: true, // Infinite loop
+                    margin: 10, // Margin between items
+                    nav: true, // Show next/prev buttons
+                    dots: true, // Show pagination dots
+                    autoplay: false, // Disable auto-play
+                    autoplayHoverPause: true, // Pause on hover
+                    navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"], // Custom nav buttons
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+        </script>
+        
+        
     </body>
 </html>
